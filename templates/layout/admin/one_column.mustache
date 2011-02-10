@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="generator" content="{{app_version}}">
+	<title>{{title}}</title>
+
+[[assets_head]]
+
+</head>
+<body>
+	<div id="main-container">
+		<div id="main-header">
+		{{#site_name}}
+			<h1 class="site-name">
+				{{#logo}}
+						<a href="{{url}}"><img src="{{image}}" alt="{{title}}" /></a>
+				{{/logo}}
+				{{^logo}}
+					<a href="{{url}}">{{title}}</a>
+				{{/logo}}
+			</h1>
+		{{/site_name}}
+			<div id="auth-navigation">
+				<ul class="nav">
+				{{#auth_navigation}}
+					<li><a href="{{url}}">{{text}}</a></li>
+				{{/auth_navigation}}
+				</ul>
+			</div>
+			{{#notices}}
+				<div class="notice {{type}}">{{message}}</div>
+			{{/notices}}
+		</div>
+		<div id="main-navigation">
+			<ul class="nav">
+			{{#main_navigation}}
+				<li><a href="{{url}}">{{text}}</a></li>
+			{{/main_navigation}}
+			</ul>
+		</div>
+		<div id="main-content">
+		{{#has_section_navigation}}
+			<div id="section-navigation">
+				<ul class="nav">
+				{{#section_navigation}}
+					<li><a href="{{url}}">{{text}}</a></li>
+				{{/section_navigation}}
+				</ul>
+			</div>
+		{{/has_section_navigation}}
+		{{#title}}
+			<h2 class="title">{{title}}</h2>
+		{{/title}}
+			<div id="body">{{>body}}</div>
+		</div>
+		<div id="main-footer">
+			{{#has_footer_navigation}}
+			<div id="footer-navigation">
+				<ul class="nav">
+				{{#footer_navigation}}
+					<li><a href="{{url}}">{{text}}</a></li>
+				{{/footer_navigation}}
+				</ul>
+			</div>
+		{{/has_footer_navigation}}
+		</div>
+	</div>
+	[[assets_body]]
+</body>
+</html>
