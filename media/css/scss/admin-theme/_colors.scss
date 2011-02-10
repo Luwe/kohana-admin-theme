@@ -1,0 +1,51 @@
+/**
+ * Colors by color name
+ *
+ * Describe the colors in this section.
+ * $white: #fefefe;
+ * $grey: #666;
+ * $teal: #005F63;
+ * $limeLight: #e7ef8a;
+ */
+$color_white: #EEE;
+$color_black: #222;
+$color_blue: #69D2E7;
+$color_light_blue: #A7DBD8;
+$color_dark_blue: $color_blue - #333;
+$color_beige: #E0E4CC;
+$color_orange_brown: #F38630;
+$color_orange: #FA6900;
+
+/**
+ * Colors by purpose
+ *
+ * Describe the usage in this section. These variables should use the Colors by name
+ * and the other files should use the Colors by purpose.
+ * $colorSiteBackground: $grey;
+ * $colorNavHover: $teal;
+ * $colorNavBackground: $lineLight;
+ */
+$color_body_bg: $color_blue;
+$color_page_bg: $color_light_blue;
+$color_page_border: $color_blue - #222;
+$color_page_shadow: $color_blue - #111;
+
+$color_main_nav_bg: $color_beige;
+$color_main_nav_border: $color_beige - #222;
+$color_main_nav_item_bg: $color_beige;
+$color_main_nav_item: $color_dark_blue;
+
+$color_auth_nav_bg: none;
+$color_auth_nav_border: none;
+$color_auth_nav_item_bg: none;
+$color_auth_nav_item: $color_main_nav_item - #222;
+
+$color_section_nav_bg: $color_main_nav_bg;
+$color_section_nav_border: $color_main_nav_border;
+$color_section_nav_item_bg: $color_main_nav_item_bg;
+$color_section_nav_item: $color_main_nav_item;
+
+$color_footer_nav_bg: $color_main_nav_bg;
+$color_footer_nav_border: $color_main_nav_border;
+$color_footer_nav_item_bg: $color_main_nav_item_bg;
+$color_footer_nav_item: $color_main_nav_item;

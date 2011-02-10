@@ -1,0 +1,118 @@
+body {
+	background: $color_body_bg;
+}
+#main-container {
+	@extend .container_16;
+	margin-top: 2em; margin-bottom: 2em;
+	background: $color_page_bg;
+	border: 2px solid $color_page_border;
+	@include clearfix;
+	@include rounded(5px);
+	@include box-shadow(12px, 12px, 15px, $color_page_shadow);
+}
+
+#main-header {
+	@extend .grid_16;
+
+	.title {
+		@extend .grid_16;
+		@extend .alpha;
+		@extend .omega;
+	}
+	#auth-navigation{
+		@extend .grid_5;
+		@extend .prefix_10;
+		@extend .suffix_1;
+		@extend .alpha;
+		@extend .omega;
+
+		ul {
+			background: $color_auth_nav_bg;
+			border: 2px solid $color_auth_nav_border;
+			border-bottom: none;
+			@include rounded-top(5px);
+
+			li {
+				margin: 0.2em;
+				a {
+					background: $color_auth_nav_item_bg;
+					color: $color_auth_nav_item;
+				}
+			}
+		}
+	}
+}
+
+#main-navigation {
+	@extend .grid_16;
+	ul {
+		background: $color_main_nav_bg;
+		border: 2px solid $color_main_nav_border;
+		@include rounded-top(5px);
+
+		li {
+			margin: 0.3em 0;
+			a {
+				margin: 0.3em 0 0.3em 1em;
+				padding: 0.3em;
+				background: $color_main_nav_item_bg;
+				color: $color_main_nav_item;
+				@include rounded(15px);
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+
+
+#main-content {
+	@extend .grid_16;
+
+	#section-navigation {
+		@extend .grid_16;
+		@extend .alpha;
+		@extend .omega;
+
+		ul {
+			background: $color_section_nav_bg;
+			border: 2px solid $color_section_nav_border;
+			border-top: none;
+			@include rounded-bottom(5px);
+
+			li {
+				a {
+					padding: 0.3em;
+					background: $color_section_nav_item_bg;
+					color: $color_section_nav_item;
+				}
+			}
+		}
+	}
+
+	.title {
+		margin: 3em 0 1em 0;
+	}
+
+	#body {
+		@extend .grid_16;
+		@extend .alpha;
+		@extend .omega;
+	}
+}
+
+#main-footer {
+	@extend .grid_16;
+}
+
+ul.nav {
+	@include horizontal-list;
+
+	a {
+		text-decoration: none;
+		font-size: 0.9em;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
