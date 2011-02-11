@@ -3,62 +3,39 @@ body {
 	background-image: url('../../images/body-bg-gradient.png');
 	background-repeat: repeat-x;
 }
-#main-container {
-	@extend .container_16;
-	margin-top: 2em; margin-bottom: 2em;
-	background: $color_page_bg;
-	border: 2px solid $color_page_border;
-	@include clearfix;
-	@include rounded(5px);
-	@include box-shadow(12px, 12px, 15px, $color_page_shadow);
-}
 
 #main-header {
-	@extend .grid_16;
+	@extend .container_16;
+	@include clearfix;
 
-	.title {
-		@extend .grid_16;
-		@extend .alpha;
-		@extend .omega;
+	.site-name {
+		@extend .grid_10;
 	}
+
 	#auth-navigation{
 		@extend .grid_4;
-		@extend .prefix_11;
-		@extend .suffix_1;
-		@extend .alpha;
-		@extend .omega;
+		@extend .prefix_2;
 
 		ul {
-			background: $color_auth_nav_bg;
-			border: 2px solid $color_auth_nav_border;
-			border-bottom: none;
-			@include rounded-top(5px);
-
 			li {
 				margin: 0.2em;
-				a {
-					background: $color_auth_nav_item_bg;
-					color: $color_auth_nav_item;
-				}
 			}
 		}
 	}
 }
 
 #main-navigation {
-	@extend .grid_16;
+	@extend .container_16;
+	margin-top: 1em;
+
 	ul {
-		background: $color_main_nav_bg;
-		border: 2px solid $color_main_nav_border;
-		@include rounded-top(5px);
+		@extend .grid_16;
 
 		li {
 			margin: 0.3em 0;
 			a {
-				margin: 0.3em 0 0.3em 1em;
-				padding: 0.3em;
-				background: $color_main_nav_item_bg;
-				color: $color_main_nav_item;
+				margin: 0.3em 1em 0.3em 0;
+				padding: 0.3em 0;
 				@include rounded(15px);
 				font-weight: 700;
 			}
@@ -69,37 +46,34 @@ body {
 
 
 #main-content {
-	@extend .grid_16;
+	@extend .container_16;
+	@include clearfix;
+
+	margin-top: 2em; margin-bottom: 2em;
+	padding-bottom: 1em;
+	background: $color_page_bg;
+	border: 2px solid $color_page_border;
+	@include box-shadow(2px, 2px, 15px, $color_page_shadow);
 
 	#section-navigation {
 		@extend .grid_16;
-		@extend .alpha;
-		@extend .omega;
 
 		ul {
-			background: $color_section_nav_bg;
-			border: 2px solid $color_section_nav_border;
-			border-top: none;
-			@include rounded-bottom(5px);
 
 			li {
 				a {
-					padding: 0.3em;
-					background: $color_section_nav_item_bg;
-					color: $color_section_nav_item;
+					padding: 0.3em 0;
 				}
 			}
 		}
 	}
 
 	.title {
-		margin: 3em 0 1em 0;
+		@extend .grid_16;
 	}
 
 	#body {
 		@extend .grid_16;
-		@extend .alpha;
-		@extend .omega;
 	}
 }
 

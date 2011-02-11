@@ -7,7 +7,7 @@
  * $teal: #005F63;
  * $limeLight: #e7ef8a;
  */
-$color_white: #EEE;
+$color_white: #F6F6F6;
 $color_black: #222;
 $color_blue: #69D2E7;
 $color_light_blue: #A7DBD8;
@@ -26,9 +26,9 @@ $color_orange: #FA6900;
  * $colorNavBackground: $lineLight;
  */
 $color_body_bg: $color_blue + #888;
-$color_page_bg: $color_light_blue + #333;
+$color_page_bg: $color_white;
 $color_page_border: none;
-$color_page_shadow: $color_light_blue - #111;
+$color_page_shadow: $color_black + #555;
 
 $color_main_nav_bg: $color_beige;
 $color_main_nav_border: $color_beige - #222;
