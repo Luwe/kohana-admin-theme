@@ -25,10 +25,10 @@ $color_orange: #FA6900;
  * $colorNavHover: $teal;
  * $colorNavBackground: $lineLight;
  */
-$color_body_bg: $color_blue;
-$color_page_bg: $color_light_blue;
-$color_page_border: $color_blue - #222;
-$color_page_shadow: $color_blue - #111;
+$color_body_bg: $color_blue + #888;
+$color_page_bg: $color_light_blue + #333;
+$color_page_border: none;
+$color_page_shadow: $color_light_blue - #111;
 
 $color_main_nav_bg: $color_beige;
 $color_main_nav_border: $color_beige - #222;
