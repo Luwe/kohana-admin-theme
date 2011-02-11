@@ -1,0 +1,23 @@
+table.list {
+	margin: 1em 0;
+
+	background: $color_table_bg;
+	border: 2px solid $color_table_border;
+	@include rounded(5px);
+
+	font-size: 0.9em;
+
+	tbody {
+		tr.odd {
+			background: $color_table_odd_row_bg;
+		}
+		tr.even {
+			background: $color_table_even_row_bg;
+		}
+		tr {
+			&:hover {
+				background: $color_table_row_hover_bg;
+			}
+		}
+	}
+}

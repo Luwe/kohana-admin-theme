@@ -49,3 +49,10 @@ $color_footer_nav_bg: $color_main_nav_bg;
 $color_footer_nav_border: $color_main_nav_border;
 $color_footer_nav_item_bg: $color_main_nav_item_bg;
 $color_footer_nav_item: $color_main_nav_item;
+
+$color_table_bg: $color_beige + #111;
+$color_table_border: $color_beige - #222;
+$color_table_row_bg: $color_beige;
+$color_table_odd_row_bg: $color_table_row_bg - #0A0A0A;
+$color_table_even_row_bg: $color_table_row_bg;
+$color_table_row_hover_bg: $color_table_row_bg + #111;
