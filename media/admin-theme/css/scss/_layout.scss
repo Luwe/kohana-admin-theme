@@ -1,5 +1,7 @@
 body {
-	background: $color_body_bg;
+	background-color: $color_body_bg;
+	background-image: url('../../images/body-bg-gradient.png');
+	background-repeat: repeat-x;
 }
 #main-container {
 	@extend .container_16;
@@ -20,8 +22,8 @@ body {
 		@extend .omega;
 	}
 	#auth-navigation{
-		@extend .grid_5;
-		@extend .prefix_10;
+		@extend .grid_4;
+		@extend .prefix_11;
 		@extend .suffix_1;
 		@extend .alpha;
 		@extend .omega;
