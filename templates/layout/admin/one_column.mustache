@@ -28,9 +28,6 @@
 				{{/auth_navigation}}
 				</ul>
 			</div>
-			{{#notices}}
-				<div class="notice {{type}}">{{message}}</div>
-			{{/notices}}
 		</div>
 		<div id="main-navigation">
 			<ul class="nav">
@@ -49,6 +46,9 @@
 				</ul>
 			</div>
 		{{/has_section_navigation}}
+		{{#notices}}
+			<div class="notice {{type}}">{{message}}</div>
+		{{/notices}}
 		{{#title}}
 			<h2 class="title">{{title}}</h2>
 		{{/title}}

@@ -68,6 +68,10 @@ body {
 		}
 	}
 
+	.notice {
+		@extend .grid_16;
+	}
+
 	.title {
 		@extend .grid_16;
 	}
