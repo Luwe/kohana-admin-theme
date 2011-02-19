@@ -1,3 +1,16 @@
 .yform-hidden {
 	display: none;
 }
+
+div.yform-item {
+
+	margin-top: 5px;
+
+	&.yform-text,
+	&.yform-password,
+	&.yform-textarea {
+		label {
+			display: block;
+		}
+	}
+}
